@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** end reset css**/
+
+html {
+    background-color: #faf8f5;
+}
+
+body {
+	max-width: 1140px;
+	margin: auto;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+#bandeau-edition {
+	width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Syne', sans-serif;
+	display: none;
+}
+
+#bandeau-edition p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+	margin-bottom: 90px;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+	
+}
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 51px;
+}
+
+#btn-modifier {
+    font-size: 0.6em;
+    color: #1D6154;
+    cursor: pointer;
+    margin-left: 15px;
+    font-family: 'Work Sans', sans-serif;
+	display: none;
+
+}
+
+.filtres{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 50px;
+}
+
+.filtres button{
+	min-width: 100px;
+	height: 37px ;
+	border: 1px #1D6154 solid;
+	border-radius: 60px;
+	color: #1D6154;
+	cursor: pointer;
+	font-family: 'Syne';
+	font-weight: 700;
+	background-color: transparent;
+}
+
+.buttonactif.active {
+	background-color: #1D6154;
+	color: white;
+}
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery figure {
+	overflow: hidden;
+}
+
+.gallery img {
+	width: 100%;
+	height:	407px;
+	object-fit: cover;
+}
+#contact {
+	width: 50%;
+margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+footer {
+    width: 100%;
+}
+
+
+/* 		Style de la page login  	*/
+
+.login {
+    max-width: 450px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.login h2 {
+    font-family: 'Syne', sans-serif;
+    color: #1D6154;
+    margin-bottom: 2rem;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.login label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+	font-weight: 500;
+}
+
+.login input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.login button[type="submit"] {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 12px 40px;
+    background-color: #1D6154;
+    color: white;
+    border-radius: 60px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.login a.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #1D6154;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* 		Affichage de la modale / Overlay  		*/
+
+#modale {
+	display: none;
+}
+
+
+.modale-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+.modale-content {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 630px;
+	position: relative;
+	text-align: center;
+	max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modale-close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	
+}
+
+.modale-back {
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+#modale-ajout {
+	display: none;
+}
+
+#galerie-modale {
+    display: grid;
+    margin: 1.5rem 0;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 9px;
+	row-gap: 29px;
+}
+
+#galerie-modale figure {
+    position: relative;
+    overflow: hidden;
+}
+
+#galerie-modale img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+#galerie-modale .btn-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+#btn-ajouter-photo {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 12px 40px;
+    background-color: #1D6154;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.modale-content h3 {
+	font-family: 'Syne', sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.upload-zone {
+	background-color: #E8F1F6;
+	border-radius: 3px;
+	padding: 2rem;
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.upload-zone i {
+	font-size: 3rem;
+	color: #aaa;
+}
+
+.upload-zone label {
+	color: #306685;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:173px ;
+	background-color: #b9d0da;
+	padding: 8px 20px;
+	border-radius: 60px;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+
+.upload-zone p {
+	font-size: 0.8rem;
+	color: #444444;
+}
+
+.upload-zone img {
+	max-width: 130px;
+	max-height: 193px;
+	object-fit: cover;
+}
+
+.modale-content form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 0.5rem;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.modale-content#form-ajout, #titleLabel ,#categoryLabel {
+	font-family: sans-serif;
+	color: #3D3D3D;
+	font-weight: 500;
+	font-size: 14px;
+	border: none;
+	
+}
+
+.modale-content input[type="text"],
+.modale-content select {
+	font-family: "Work sans", sans-serif;
+	color: #444444;
+	font-style: regular;
+	font-weight: 400;
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #A7A7A7;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    border: none;
+}
+
+.modale-content h3 {
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #B3B3B3;
+    margin: 1.5rem 0;
+}
+
+#btn-valider {
+	font-family: "Syne", sans-serif;
+	color: white;
+	width: 237px;
+	margin: 1rem auto 0;
+	padding: 12px 40px;
+	background-color: #A7A7A7;
+	border: none;
+	border-radius: 60px;
+	cursor: pointer;
+	font-size: 1rem;
+}
