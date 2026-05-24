@@ -265,6 +265,7 @@ footer nav ul {
 
 footer {
     width: 100%;
+	background-color: white;
 }
 
 
@@ -329,10 +330,18 @@ footer {
 
 /* 		Affichage de la modale / Overlay  		*/
 
+#form-ajout {
+	max-width: 420px;
+	margin: 0 auto;
+}
 #modale {
 	display: none;
 }
 
+#modale-galerie {
+	max-width: 420px;
+	margin: 0 auto;
+}
 
 .modale-overlay {
 	position: fixed;
@@ -363,7 +372,6 @@ footer {
 	border: none;
 	font-size: 1.5rem;
 	cursor: pointer;
-	
 }
 
 .modale-back {
@@ -386,7 +394,7 @@ footer {
     margin: 1.5rem 0;
 	width: 100%;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	column-gap: 9px;
+	column-gap: 8px;
 	row-gap: 29px;
 }
 
@@ -496,7 +504,6 @@ footer {
 .modale-content select {
 	font-family: "Work sans", sans-serif;
 	color: #444444;
-	font-style: regular;
 	font-weight: 400;
 	font-size: 14px;
 	padding: 10px;
